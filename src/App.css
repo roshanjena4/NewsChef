@@ -1,0 +1,84 @@
+.nav-link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-toggler-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    transform: rotate(90deg);
+}
+
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.05);
+  }
+  
+  .badge {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+
+  
+
+  
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+    border-radius: 10px; /* Rounded track edges */
+  }
+  
+  /* Firefox Support */
+  * {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #1768AC #f1f1f1; /* Thumb color and track color */
+  }
+  
